@@ -47,7 +47,7 @@ if ( ! function_exists( 'twentynineteen_setup' ) ) :
 		// This theme uses wp_nav_menu() in two locations.
 		register_nav_menus( array(
 			'menu-1' => esc_html__( 'Primary', 'twentynineteen' ),
-			'social' => __( 'Social Links Menu', 'twentynineteen' ),
+			'social' => esc_html__( 'Social Links Menu', 'twentynineteen' ),
 		) );
 
 		/*
@@ -80,16 +80,16 @@ if ( ! function_exists( 'twentynineteen_setup' ) ) :
 			'flex-height' => false,
 		) );
 
-		// Add support for Block Styles
+		// Add support for Block Styles.
 		add_theme_support( 'wp-block-styles' );
 
 		// Add support for full and wide align images.
 		add_theme_support( 'align-wide' );
 
-		// Add support for editor styles
+		// Add support for editor styles.
 		add_theme_support( 'editor-styles' );
 
-		// Enqueue editor styles
+		// Enqueue editor styles.
 		add_editor_style( 'style-editor.css' );
 
 	}
